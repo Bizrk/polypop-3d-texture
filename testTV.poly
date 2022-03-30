@@ -1,0 +1,29 @@
+{
+  "type": "3D Model",
+  "name": "Test TV",
+
+  "description": "3D TV screen",
+  "path": "testTV.obj",
+
+  "materials": {
+    "TVMaterial": {
+      "Diffuse": {
+        "DiffuseColorSource": "ObjectColor"
+      }
+    },
+    "ScreenMaterial": {
+      "Diffuse": {
+        "DiffuseMap": {
+          "TextureSource": "Object_Texture1"
+        }
+      },
+      "Translucency": {
+        "UseDiffuseMapAlpha": true,
+        "BlendMode": "Opaque"
+      },
+      "Illumination": {
+        "Lit": false
+      }
+    }
+  }
+}
